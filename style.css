@@ -1,0 +1,424 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: rgb(245, 240, 246);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%
+    }
+
+
+
+    /* ENCABEZADO */
+    #header {
+        background-image: url(./Imagenes/Woolen\ and\ cotton\ bright\ yarn\ stock\ photo\ containing\ knitting\ and\ crocheting.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+        width: auto;
+        opacity: 80%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 100%;
+        max-height: 200px;
+        border-radius: 100px;
+        opacity: 95%;
+        margin: auto;
+    }
+
+    .float-container {
+        display: flex;
+    }
+
+    @media screen and (max-width:1200px) {
+        .float-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .float-child {
+        width: 100%;
+        text-align: end;
+    }
+
+    @media screen and (max-width:1200px) {
+        .float-child {
+            text-align: center;
+        }
+    }
+
+    .float-child h1 {
+        color: rgb(143, 104, 146);
+        margin-left: 5%;
+        text-align: start;
+    }
+
+    @media screen and (max-width:1200px) {
+        .float-child h1 {
+            text-align: center;
+        }
+    }
+
+    .menu ul li {
+        display: inline;
+        margin: 5px;
+        text-align: center;
+        color: rgb(143, 104, 146);
+    }
+
+    .menu ul li:hover {
+        background-color: rgb(192, 158, 225);
+    }
+
+    .buscar {
+        display: flex;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .buscar input {
+        justify-content: center;
+    }
+
+    /* FIN DE ENCABEZADO */
+
+
+    .button {
+        display: flex;
+        height: 100%;
+        padding: 10px;
+        justify-content: end;
+    }
+
+    .button img {
+
+        height: 20px;
+
+    }
+
+
+    /* PRODUCTOS */
+
+    #contenido {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: rgb(245, 225, 236);
+        width: 75%;
+        height: auto;
+        margin: auto;
+        justify-content: center;
+        border-radius: 25px;
+    }
+
+    @media screen and (max-width:1200px) {
+        #contenido {
+            width: 100%;
+
+        }
+    }
+
+    .producto {
+        border: double lightgrey 5px;
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
+
+
+    #contenido .producto img {
+        width: 200px;
+        height: 300px;
+        margin: 50px;
+        border: ridge gray 5px;
+    }
+
+    #contenido .producto img:hover {
+        transform: scale(1.5);
+    }
+
+    #contenido .producto p {
+        width: 300px;
+        text-align: center;
+
+        justify-content: center;
+
+    }
+
+    #contenido .producto h2 {
+        width: 300px;
+        text-align: center;
+        justify-content: center;
+        color: grey;
+        text-decoration: underline;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    #contenido .producto button {
+        width: 150px;
+        margin-left: 85px;
+        color: black;
+        background-color: lightgray;
+    }
+
+    #contenido .producto button:hover {
+        color: violet;
+    }
+
+    /*INDEX */
+    #inicio {
+        background-color: rgb(245, 225, 236);
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-column: 1fr 1fr 1fr;
+        border-radius: 25px;
+        align-items: center;
+    }
+
+    .fotos {
+
+        align-items: center;
+        height: 100%;
+        width: auto;
+        margin: auto;
+    }
+
+    @media screen and (max-width:1200px) {
+        .fotos img {
+
+            display: grid;
+            grid-column: 1fr;
+        }
+    }
+
+    .fotos img {
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        padding: 20px;
+        border-radius: 50px;
+        opacity: 80%;
+        justify-content: center;
+
+    }
+
+    @media screen and (max-width:1200px) {
+        .fotos img {
+            width: 250px;
+        }
+    }
+
+
+    .fotos img {
+        animation-duration: 4s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 3;
+        }
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(129, 121, 129);
+        width: auto;
+        height: 100%;
+
+    }
+
+    @media screen and (max-width:1200px) {
+        .info {
+            grid-template-columns: 1fr;
+
+
+        }
+    }
+
+    .info1 {
+        text-align: center;
+        padding: 20px;
+        height: auto;
+        width: 100%;
+
+
+    }
+
+    .info1 h2 {
+        padding: 10px;
+        text-decoration: underline;
+        height: auto;
+        width: 100%;
+
+
+    }
+
+    .info2 {
+        text-align: center;
+        padding: 20px;
+        height: auto;
+        width: 100%;
+
+    }
+
+    .info2 h2 {
+        padding: 10px;
+        text-decoration: underline;
+        height: auto;
+    }
+
+    .info2 li {
+        text-align: justify;
+        margin-left: 35%;
+        height: auto;
+        width: auto;
+        padding: 5px;
+    }
+
+    @media screen and (max-width:1200px) {
+        .info2 li {
+            width: 100%;
+            margin-left: 40%;
+
+        }
+    }
+
+    .info3 {
+        text-align: center;
+        padding: 20px;
+        height: auto;
+        width: 100%;
+
+    }
+
+    .info3 h2 {
+        padding: 10px;
+        text-decoration: underline;
+        height: auto;
+        width: 100%;
+
+    }
+
+    .info3 p {
+        padding: 10px;
+        height: auto;
+        width: 100%;
+
+    }
+
+
+    /* FOOTER*/
+    #footer {
+        display: flex;
+        flex-flow: row wrap;
+        background-image: url(./Imagenes/Top\ view\ of\ colored\ yarn\ balls\ in\ a\ featuring\ balls\,\ white\,\ and\ nobody.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 90%;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    @media screen and (max-width:1000px) {
+        #footer {
+            flex-flow: column;
+        }
+    }
+
+    .logofooter {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:1000px) {
+        .logofooter {
+            width: 100%;
+        }
+    }
+
+    .logofooter img {
+        width: 40%;
+        height: auto;
+        border-radius: 95px;
+        padding: 10px;
+        margin: 10px;
+        opacity: 80%;
+    }
+
+    .descripcion {
+        width: 40%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    @media screen and (max-width:1000px) {
+        .descripcion {
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    .descripcion h3 {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        color: gray;
+        font-size: large;
+        margin-left: 5%;
+
+    }
+
+    .descripcion form {
+        width: 200px;
+        padding: 10px;
+        margin-left: 5%;
+        border: solid lightgray 5px;
+    }
+
+    .redes {
+        display: flex;
+        margin-top: auto;
+        padding: 10px;
+        width: 17%;
+    }
+
+    @media screen and (max-width:1000px) {
+        .redes {
+            width: 100%;
+            text-align: center;
+            padding: 5%;
+            justify-content: center;
+        }
+    }
+
+    .redes h4 {
+        padding: 10px;
+        margin-top: 2%;
+    }
+
+    .redes img {
+        width: 50px;
+        border-radius: 40px;
+    }
+
+    /* FOOTER*/

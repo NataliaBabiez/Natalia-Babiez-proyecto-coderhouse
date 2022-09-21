@@ -96,7 +96,7 @@
     .button {
         display: flex;
         height: 100%;
-        padding: 10px;
+        margin: 10px;
         justify-content: end;
     }
 
@@ -199,7 +199,7 @@
 
     .fotos img {
         width: 50%;
-        max-width: 390px;
+        max-width: 400px;
         height: auto;
         padding: 20px;
         border-radius: 50px;
@@ -210,7 +210,7 @@
 
     @media screen and (max-width:1200px) {
         .fotos img {
-            width: 500px;
+            width: 300px;
         }
     }
 
@@ -256,24 +256,25 @@
     }
 
     .info1 h2 {
-        padding: 10px;
+
         text-decoration: underline;
         height: auto;
         width: 100%;
+        margin: 10px;
 
 
     }
 
     .info2 {
         text-align: center;
-        padding: 20px;
+        margin: 10px;
         height: auto;
         width: 100%;
 
     }
 
     .info2 h2 {
-        padding: 10px;
+        margin: 10px;
         text-decoration: underline;
         height: auto;
     }
@@ -293,14 +294,14 @@
 
     .info3 {
         text-align: center;
-        padding: 20px;
+        margin: 10px;
         height: auto;
         width: 100%;
 
     }
 
     .info3 h2 {
-        padding: 10px;
+        margin: 10px;
         text-decoration: underline;
         height: auto;
         width: 100%;
@@ -308,7 +309,7 @@
     }
 
     .info3 p {
-        padding: 10px;
+        margin: 10px;
         height: auto;
         width: 100%;
 

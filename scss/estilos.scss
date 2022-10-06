@@ -66,7 +66,7 @@ body {
         justify-content: center;
 
         input {
-            justify-content: center;
+            text-align: center;
         }
     }
 }
@@ -102,11 +102,12 @@ body {
         height: 100%;
         width: auto;
         margin: auto;
+        padding: 5px;
 
         img {
-            width: 50%;
+            display: inline;
+            width: 100%;
             max-width: 400px;
-            height: auto;
             padding: 20px;
             border-radius: 50px;
             opacity: 80%;
@@ -272,10 +273,13 @@ body {
         border: solid 5px lightgray;
         border-radius: 20px;
         margin: 20px;
-        &:hover { 
+
+        &:hover {
             color: black;
             background-color: rgb(235, 232, 232);
-            border: none;}
+            border: none;
+        }
+
         h2 {
             text-align: center;
         }
@@ -330,19 +334,23 @@ body {
 
 /* ACA TERMINA PAGINA PREGUNTAS FRECUENTES*/
 
-.empre-img{
+.empre-img {
     width: 100%;
     justify-content: center;
     text-align: center;
-   img{
-    max-width: 450px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 30px;
-    
-    
-   }
+
+    img {
+        max-width: 450px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 30px;
+
+
+    }
 }
+
+/* ACA TERMINA PAGINA PREGUNTAS FRECUENTES*/
+
 /*ACA EMPIEZA EL FOOTER */
 #footer {
     display: flex;
@@ -352,31 +360,23 @@ body {
     background-size: cover;
     background-attachment: fixed;
     opacity: 90%;
-    margin: 10px;
     border-radius: 10px;
 
     .logofooter {
-        width: 40%;
         display: flex;
-        justify-content: center;
 
         img {
-            width: 40%;
-            height: auto;
-            border-radius: 95px;
-            padding: 10px;
-            margin: 10px;
+            border-radius: 150px;
             opacity: 80%;
         }
     }
 
     .descripcion {
-        width: 40%;
         display: flex;
         flex-flow: column;
 
         h3 {
-            width: 300px;
+            max-width: 300px;
             padding: 10px;
             margin: 10px;
             color: gray;
@@ -385,7 +385,7 @@ body {
         }
 
         form {
-            width: 200px;
+            max-width: 200px;
             padding: 10px;
             margin-left: 5%;
             border: solid lightgray 5px;
@@ -394,9 +394,6 @@ body {
 
     .redes {
         display: flex;
-        margin-top: auto;
-        padding: 10px;
-        width: 17%;
 
         h4 {
             padding: 10px;
@@ -404,7 +401,7 @@ body {
         }
 
         img {
-            width: 50px;
+            max-width: 50px;
             border-radius: 40px;
         }
     }
@@ -412,8 +409,10 @@ body {
 
 /*ACA TERMINA EL FOOTER */
 
-/*MEDIA QUERIS */
+/*MEDIA QUERY */
 @media (max-width: 576px) {
+
+    /*PAGINA PREGUNTAS */
     .preguntasfrecuentes {
         display: flex;
         flex-flow: column;
@@ -437,9 +436,24 @@ body {
         width: 100%;
 
     }
-}
 
-@media screen and (max-width:576px) {
+    .empre-img {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+        img {
+            max-width: 300px;
+            text-align: center;
+            border-radius: 30px;
+            padding: 15px;
+            margin: 10px;
+            background-color: rgb(245, 225, 236);
+        }
+    }
+
+    /*PAGINA PREGUNTAS */
+    /*HEADER */
     .float-container {
         display: flex;
         flex-direction: column;
@@ -448,6 +462,8 @@ body {
 
     .float-child {
         width: 100%;
+        text-align-last: center;
+
         h1 {
             text-decoration: underline;
             text-align: center;
@@ -458,45 +474,151 @@ body {
         text-align: center;
     }
 
+    /*HEADER */
+    /*FOOTER*/
+    #footer {
+        display: inline-block;
+        text-align: center;
+
+
+        .logofooter {
+            align-items: center;
+            margin: auto;
+
+            img {
+                width: 200px;
+            }
+
+
+        }
+
+        .descripcion {
+            width: 100%;
+            align-items: center;
+
+            h3 {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        .redes {
+            width: 100%;
+            text-align: center;
+            padding: 5%;
+            justify-content: center;
+        }
+    }
+
+    /*FOOTER*/
+    /*PAGINA PRODUCTOS*/
     #contenido {
         width: 100%;
 
+        .fotos img {
+            display: grid;
+            grid-column: 1fr;
+        }
+
+        .fotos img {
+            width: 300px;
+        }
+
+        .info {
+            grid-template-columns: 1fr;
+        }
+
+        .info2 li {
+            width: 100%;
+        }
     }
 
-    .fotos img {
-        display: grid;
-        grid-column: 1fr;
+    #inicio {
+        .fotos img {
+            display: grid;
+            grid-column: 1fr;
+            width: 250px;
+        }
+
+        .info {
+            grid-template-columns: 1fr;
+
+            li {
+                width: 100%;
+            }
+        }
     }
 
-    .fotos img {
-        width: 300px;
-    }
+}
 
-    .info {
-        grid-template-columns: 1fr;
-    }
+/*PAGINA PRODUCTOS*/
 
-    .info2 li {
-        width: 100%;
-    }
+@media screen and (max-width:768px) {
 
+
+    /*FOOTER*/
     #footer {
-        flex-flow: column;
+        flex-flow: row;
+        width: 100%;
+
+        .logofooter {
+            max-width: 50%;
+
+            img {
+                width: 200px;
+
+
+            }
+        }
+
+        .descripcion {
+            width: 100%;
+            align-items: center;
+        }
+
+        .redes {
+            width: 100%;
+            text-align: center;
+            padding: 5%;
+            justify-content: center;
+        }
+
+
     }
 
-    .logofooter {
-        width: 100%;
-    }
+}
 
-    .descripcion {
-        width: 100%;
-        align-items: center;
-    }
+/*FOOTER*/
 
-    .redes {
+@media screen and (min-width:1024px) {
+
+    /*FOOTER*/
+    #footer {
+        flex-flow: row;
         width: 100%;
-        text-align: center;
-        padding: 5%;
-        justify-content: center;
+
+        .logofooter {
+            max-width: 100%;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+
+            }
+        }
+
+        .descripcion {
+            width: 100%;
+            align-items: center;
+        }
+
+        .redes {
+            text-align: center;
+            padding: 10px;
+            justify-content: center;
+            margin-top: auto;
+        }
     }
 }
+
+/*FOOTER*/

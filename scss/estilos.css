@@ -57,7 +57,7 @@ body {
   justify-content: center;
 }
 #header .buscar input {
-  justify-content: center;
+  text-align: center;
 }
 
 /* FIN DE HEADER */
@@ -88,11 +88,12 @@ body {
   height: 100%;
   width: auto;
   margin: auto;
+  padding: 5px;
 }
 #inicio .fotos img {
-  width: 50%;
+  display: inline;
+  width: 100%;
   max-width: 400px;
-  height: auto;
   padding: 20px;
   border-radius: 50px;
   opacity: 80%;
@@ -305,6 +306,7 @@ body {
   border-radius: 30px;
 }
 
+/* ACA TERMINA PAGINA PREGUNTAS FRECUENTES*/
 /*ACA EMPIEZA EL FOOTER */
 #footer {
   display: flex;
@@ -314,29 +316,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
   opacity: 90%;
-  margin: 10px;
   border-radius: 10px;
 }
 #footer .logofooter {
-  width: 40%;
   display: flex;
-  justify-content: center;
 }
 #footer .logofooter img {
-  width: 40%;
-  height: auto;
-  border-radius: 95px;
-  padding: 10px;
-  margin: 10px;
+  border-radius: 150px;
   opacity: 80%;
 }
 #footer .descripcion {
-  width: 40%;
   display: flex;
   flex-flow: column;
 }
 #footer .descripcion h3 {
-  width: 300px;
+  max-width: 300px;
   padding: 10px;
   margin: 10px;
   color: gray;
@@ -344,29 +338,27 @@ body {
   margin-left: 5%;
 }
 #footer .descripcion form {
-  width: 200px;
+  max-width: 200px;
   padding: 10px;
   margin-left: 5%;
   border: solid lightgray 5px;
 }
 #footer .redes {
   display: flex;
-  margin-top: auto;
-  padding: 10px;
-  width: 17%;
 }
 #footer .redes h4 {
   padding: 10px;
   margin-top: 2%;
 }
 #footer .redes img {
-  width: 50px;
+  max-width: 50px;
   border-radius: 40px;
 }
 
 /*ACA TERMINA EL FOOTER */
-/*MEDIA QUERIS */
+/*MEDIA QUERY */
 @media (max-width: 576px) {
+  /*PAGINA PREGUNTAS */
   .preguntasfrecuentes {
     display: flex;
     flex-flow: column;
@@ -384,14 +376,29 @@ body {
     text-align: center;
     width: 100%;
   }
-}
-@media screen and (max-width: 576px) {
+  .empre-img {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .empre-img img {
+    max-width: 300px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgb(245, 225, 236);
+  }
+  /*PAGINA PREGUNTAS */
+  /*HEADER */
   .float-container {
     display: flex;
     flex-direction: column;
   }
   .float-child {
     width: 100%;
+    -moz-text-align-last: center;
+         text-align-last: center;
   }
   .float-child h1 {
     text-decoration: underline;
@@ -400,36 +407,110 @@ body {
   .menu {
     text-align: center;
   }
-  #contenido {
-    width: 100%;
-  }
-  .fotos img {
-    display: grid;
-    grid-column: 1fr;
-  }
-  .fotos img {
-    width: 300px;
-  }
-  .info {
-    grid-template-columns: 1fr;
-  }
-  .info2 li {
-    width: 100%;
-  }
+  /*HEADER */
+  /*FOOTER*/
   #footer {
-    flex-flow: column;
+    display: inline-block;
+    text-align: center;
   }
-  .logofooter {
-    width: 100%;
+  #footer .logofooter {
+    align-items: center;
+    margin: auto;
   }
-  .descripcion {
+  #footer .logofooter img {
+    width: 200px;
+  }
+  #footer .descripcion {
     width: 100%;
     align-items: center;
   }
-  .redes {
+  #footer .descripcion h3 {
+    text-align: center;
+    width: 100%;
+  }
+  #footer .redes {
     width: 100%;
     text-align: center;
     padding: 5%;
     justify-content: center;
   }
-}/*# sourceMappingURL=estilos.css.map */
+  /*FOOTER*/
+  /*PAGINA PRODUCTOS*/
+  #contenido {
+    width: 100%;
+  }
+  #contenido .fotos img {
+    display: grid;
+    grid-column: 1fr;
+  }
+  #contenido .fotos img {
+    width: 300px;
+  }
+  #contenido .info {
+    grid-template-columns: 1fr;
+  }
+  #contenido .info2 li {
+    width: 100%;
+  }
+  #inicio .fotos img {
+    display: grid;
+    grid-column: 1fr;
+    width: 250px;
+  }
+  #inicio .info {
+    grid-template-columns: 1fr;
+  }
+  #inicio .info li {
+    width: 100%;
+  }
+}
+/*PAGINA PRODUCTOS*/
+@media screen and (max-width: 768px) {
+  /*FOOTER*/
+  #footer {
+    flex-flow: row;
+    width: 100%;
+  }
+  #footer .logofooter {
+    max-width: 50%;
+  }
+  #footer .logofooter img {
+    width: 200px;
+  }
+  #footer .descripcion {
+    width: 100%;
+    align-items: center;
+  }
+  #footer .redes {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    justify-content: center;
+  }
+}
+/*FOOTER*/
+@media screen and (min-width: 1024px) {
+  /*FOOTER*/
+  #footer {
+    flex-flow: row;
+    width: 100%;
+  }
+  #footer .logofooter {
+    max-width: 100%;
+    justify-content: center;
+  }
+  #footer .logofooter img {
+    max-width: 100%;
+  }
+  #footer .descripcion {
+    width: 100%;
+    align-items: center;
+  }
+  #footer .redes {
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    margin-top: auto;
+  }
+}
+/*FOOTER*//*# sourceMappingURL=estilos.css.map */

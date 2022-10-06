@@ -1,0 +1,435 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(245, 240, 246);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+/* HEADER */
+#header {
+  background-image: url(../Imagenes/Woolen\ and\ cotton\ bright\ yarn\ stock\ photo\ containing\ knitting\ and\ crocheting.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: auto;
+  opacity: 80%;
+}
+#header .logo {
+  display: flex;
+  justify-content: center;
+}
+#header .logo img {
+  height: 100%;
+  max-height: 200px;
+  border-radius: 100px;
+  opacity: 95%;
+  margin: auto;
+}
+#header .float-container {
+  display: flex;
+}
+#header .float-child {
+  width: 100%;
+  text-align: end;
+}
+#header .float-child h1 {
+  color: rgb(143, 104, 146);
+  margin-left: 5%;
+  text-align: start;
+}
+#header .menu ul li {
+  display: inline;
+  margin: 5px;
+  text-align: center;
+  color: rgb(143, 104, 146);
+}
+#header .menu ul li :hover {
+  background-color: rgb(192, 158, 225);
+}
+#header .buscar {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+#header .buscar input {
+  justify-content: center;
+}
+
+/* FIN DE HEADER */
+/* BOTON DE COMPRAS */
+.button {
+  display: flex;
+  height: 100%;
+  margin: 10px;
+  justify-content: end;
+}
+.button img {
+  height: 20px;
+}
+
+/* BOTON DE COMPRAS */
+/*ACA EMPIEZA LA PAGINA INDEX */
+#inicio {
+  background-color: rgb(245, 225, 236);
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+  border-radius: 25px;
+  align-items: center;
+}
+#inicio .fotos {
+  align-items: center;
+  height: 100%;
+  width: auto;
+  margin: auto;
+}
+#inicio .fotos img {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  padding: 20px;
+  border-radius: 50px;
+  opacity: 80%;
+  justify-content: center;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 3;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 3;
+  }
+}
+#inicio .info {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(129, 121, 129);
+  width: auto;
+  height: 100%;
+}
+#inicio .info1 {
+  text-align: center;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+}
+#inicio .info1 h2 {
+  text-decoration: underline;
+  height: auto;
+  width: 100%;
+  margin: 10px;
+}
+#inicio .info2 {
+  text-align: center;
+  margin: 10px;
+  height: auto;
+  width: 100%;
+}
+#inicio .info2 h2 {
+  margin: 10px;
+  text-decoration: underline;
+  height: auto;
+}
+#inicio .info2 li {
+  height: auto;
+  width: auto;
+}
+#inicio .info3 {
+  text-align: center;
+  margin: 10px;
+  height: auto;
+  width: 100%;
+}
+#inicio .info3 h2 {
+  margin: 10px;
+  text-decoration: underline;
+  height: auto;
+  width: 100%;
+}
+#inicio .info3 p {
+  margin: 10px;
+  height: auto;
+  width: 100%;
+}
+
+/*ACA TERMINA LA PAGINA INDEX */
+/*ACA EMPIEZA LA PAGINA PRODUCTOS */
+#contenido {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgb(245, 225, 236);
+  width: 75%;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  border-radius: 25px;
+}
+#contenido .producto {
+  border: double lightgrey 5px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#contenido .producto img {
+  width: 200px;
+  height: 300px;
+  margin: 50px;
+  border: ridge gray 5px;
+}
+#contenido .producto img:hover {
+  transform: scale(1.5);
+}
+#contenido .producto p {
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+}
+#contenido .producto h2 {
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+  color: grey;
+  text-decoration: underline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#contenido .producto button {
+  width: 150px;
+  margin-left: 85px;
+  color: black;
+  background-color: lightgray;
+}
+#contenido .producto button:hover {
+  color: violet;
+}
+
+/*ACA TERMINA LA PAGINA PRODUCTOS */
+/* ACA EMPIEZA PAGINA PREGUNTAS FRECUENTES*/
+.preguntasfrecuentes {
+  display: flex;
+  align-items: center;
+}
+.preguntasfrecuentes .container-preguntas {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.preguntasfrecuentes .container-preguntas h2 {
+  text-decoration: underline;
+}
+.preguntasfrecuentes .preguntas {
+  width: 80%;
+  color: rgb(129, 121, 129);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border: solid 5px lightgray;
+  border-radius: 20px;
+  margin: 20px;
+}
+.preguntasfrecuentes .preguntas:hover {
+  color: black;
+  background-color: rgb(235, 232, 232);
+  border: none;
+}
+.preguntasfrecuentes .preguntas h2 {
+  text-align: center;
+}
+.preguntasfrecuentes .imagen {
+  width: 60%;
+}
+.preguntasfrecuentes .imagen img {
+  max-width: 250px;
+  border-radius: 5%;
+}
+
+.preguntasfrecuentes2 {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+}
+.preguntasfrecuentes2 .container-preguntas2 {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.preguntasfrecuentes2 .preguntas2 {
+  width: 80%;
+  color: rgb(129, 121, 129);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border: solid 5px lightgray;
+  border-radius: 20px;
+  margin: 20px;
+}
+.preguntasfrecuentes2 .preguntas2 h2 {
+  text-align: center;
+}
+.preguntasfrecuentes2 .imagen2 {
+  width: 60%;
+  text-align: center;
+}
+.preguntasfrecuentes2 .imagen2 img {
+  max-width: 250px;
+  border-radius: 5%;
+}
+
+/* ACA TERMINA PAGINA PREGUNTAS FRECUENTES*/
+.empre-img {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.empre-img img {
+  max-width: 450px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+/*ACA EMPIEZA EL FOOTER */
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-image: url(../Imagenes/Top\ view\ of\ colored\ yarn\ balls\ in\ a\ featuring\ balls\,\ white\,\ and\ nobody.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 90%;
+  margin: 10px;
+  border-radius: 10px;
+}
+#footer .logofooter {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+#footer .logofooter img {
+  width: 40%;
+  height: auto;
+  border-radius: 95px;
+  padding: 10px;
+  margin: 10px;
+  opacity: 80%;
+}
+#footer .descripcion {
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+}
+#footer .descripcion h3 {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  color: gray;
+  font-size: large;
+  margin-left: 5%;
+}
+#footer .descripcion form {
+  width: 200px;
+  padding: 10px;
+  margin-left: 5%;
+  border: solid lightgray 5px;
+}
+#footer .redes {
+  display: flex;
+  margin-top: auto;
+  padding: 10px;
+  width: 17%;
+}
+#footer .redes h4 {
+  padding: 10px;
+  margin-top: 2%;
+}
+#footer .redes img {
+  width: 50px;
+  border-radius: 40px;
+}
+
+/*ACA TERMINA EL FOOTER */
+/*MEDIA QUERIS */
+@media (max-width: 576px) {
+  .preguntasfrecuentes {
+    display: flex;
+    flex-flow: column;
+  }
+  .imagen {
+    text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+  .preguntasfrecuentes2 {
+    display: flex;
+    flex-flow: column;
+  }
+  .imagen2 {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .float-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .float-child {
+    width: 100%;
+  }
+  .float-child h1 {
+    text-decoration: underline;
+    text-align: center;
+  }
+  .menu {
+    text-align: center;
+  }
+  #contenido {
+    width: 100%;
+  }
+  .fotos img {
+    display: grid;
+    grid-column: 1fr;
+  }
+  .fotos img {
+    width: 300px;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .info2 li {
+    width: 100%;
+  }
+  #footer {
+    flex-flow: column;
+  }
+  .logofooter {
+    width: 100%;
+  }
+  .descripcion {
+    width: 100%;
+    align-items: center;
+  }
+  .redes {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=estilos.css.map */

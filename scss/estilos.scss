@@ -273,13 +273,11 @@ body {
         border: solid 5px lightgray;
         border-radius: 20px;
         margin: 20px;
-
         &:hover {
             color: black;
             background-color: rgb(235, 232, 232);
             border: none;
         }
-
         h2 {
             text-align: center;
         }
@@ -294,43 +292,51 @@ body {
         }
     }
 }
-
 .preguntasfrecuentes2 {
     display: flex;
-    flex-flow: row-reverse;
     align-items: center;
 
     .container-preguntas2 {
         display: flex;
         flex-direction: column;
         text-align: justify;
-    }
-
-    .preguntas2 {
-        width: 80%;
-        color: rgb(129, 121, 129);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 10px;
-        border: solid 5px lightgray;
-        border-radius: 20px;
-        margin: 20px;
 
         h2 {
-            text-align: center;
+            text-decoration: underline;
         }
     }
+  .preguntas{
+  width: 80%;
+  color: rgb(129, 121, 129);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border: solid 5px lightgray;
+  border-radius: 20px;
+  margin: 20px;
+  &:hover {
+      color: black;
+      background-color: rgb(235, 232, 232);
+      border: none;
+  }
+  h2 {
+      text-align: center;
+  }
+  }
 
-    .imagen2 {
+    }
+    
+        
+    
+
+    .imagen {
         width: 60%;
-        text-align: center;
 
         img {
             max-width: 250px;
             border-radius: 5%;
-
         }
     }
-}
+
 
 /* ACA TERMINA PAGINA PREGUNTAS FRECUENTES*/
 

@@ -254,6 +254,23 @@ body {
 .preguntasfrecuentes .preguntas h2 {
   text-align: center;
 }
+.preguntasfrecuentes .preguntas {
+  width: 80%;
+  color: rgb(129, 121, 129);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border: solid 5px lightgray;
+  border-radius: 20px;
+  margin: 20px;
+}
+.preguntasfrecuentes .preguntas:hover {
+  color: black;
+  background-color: rgb(235, 232, 232);
+  border: none;
+}
+.preguntasfrecuentes .preguntas h2 {
+  text-align: center;
+}
 .preguntasfrecuentes .imagen {
   width: 60%;
 }
@@ -264,7 +281,7 @@ body {
 
 .preguntasfrecuentes2 {
   display: flex;
-  flex-flow: row-reverse;
+  flex-direction: row-reverse;
   align-items: center;
 }
 .preguntasfrecuentes2 .container-preguntas2 {
@@ -272,7 +289,10 @@ body {
   flex-direction: column;
   text-align: justify;
 }
-.preguntasfrecuentes2 .preguntas2 {
+.preguntasfrecuentes2 .container-preguntas2 h2 {
+  text-decoration: underline;
+}
+.preguntasfrecuentes2 .preguntas {
   width: 80%;
   color: rgb(129, 121, 129);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -281,12 +301,16 @@ body {
   border-radius: 20px;
   margin: 20px;
 }
-.preguntasfrecuentes2 .preguntas2 h2 {
+.preguntasfrecuentes2 .preguntas:hover {
+  color: black;
+  background-color: rgb(235, 232, 232);
+  border: none;
+}
+.preguntasfrecuentes2 .preguntas h2 {
   text-align: center;
 }
 .preguntasfrecuentes2 .imagen2 {
   width: 60%;
-  text-align: center;
 }
 .preguntasfrecuentes2 .imagen2 img {
   max-width: 250px;

@@ -273,11 +273,33 @@ body {
         border: solid 5px lightgray;
         border-radius: 20px;
         margin: 20px;
+
         &:hover {
             color: black;
             background-color: rgb(235, 232, 232);
             border: none;
         }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .preguntas {
+        width: 80%;
+        color: rgb(129, 121, 129);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 10px;
+        border: solid 5px lightgray;
+        border-radius: 20px;
+        margin: 20px;
+
+        &:hover {
+            color: black;
+            background-color: rgb(235, 232, 232);
+            border: none;
+        }
+
         h2 {
             text-align: center;
         }
@@ -292,8 +314,10 @@ body {
         }
     }
 }
+
 .preguntasfrecuentes2 {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
 
     .container-preguntas2 {
@@ -305,37 +329,37 @@ body {
             text-decoration: underline;
         }
     }
-  .preguntas{
-  width: 80%;
-  color: rgb(129, 121, 129);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px;
-  border: solid 5px lightgray;
-  border-radius: 20px;
-  margin: 20px;
-  &:hover {
-      color: black;
-      background-color: rgb(235, 232, 232);
-      border: none;
-  }
-  h2 {
-      text-align: center;
-  }
-  }
 
+    .preguntas {
+        width: 80%;
+        color: rgb(129, 121, 129);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 10px;
+        border: solid 5px lightgray;
+        border-radius: 20px;
+        margin: 20px;
+
+        &:hover {
+            color: black;
+            background-color: rgb(235, 232, 232);
+            border: none;
+        }
+
+        h2 {
+            text-align: center;
+        }
     }
-    
-        
-    
 
-    .imagen {
+    .imagen2 {
         width: 60%;
 
         img {
             max-width: 250px;
             border-radius: 5%;
         }
+
     }
+}
 
 
 /* ACA TERMINA PAGINA PREGUNTAS FRECUENTES*/
